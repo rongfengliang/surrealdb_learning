@@ -1,0 +1,9 @@
+version: "3"
+services:
+    db:
+       image: surrealdb/surrealdb:latest
+       command: start  --log trace --user root --pass root  file:///var/lib/surrealdb/mydatabase.db
+       volumes:
+         - ./db/mydatabase.db:/var/lib/surrealdb/mydatabase.db
+       ports:
+       - "8000:8000"

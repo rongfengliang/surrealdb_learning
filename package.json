@@ -1,0 +1,18 @@
+{
+  "name": "surrealdb-docker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "surrealdb.js": "^0.11.0",
+    "surrealdb.wasm": "^0.7.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.4"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  }
+}
